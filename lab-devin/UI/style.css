@@ -1,0 +1,46 @@
+* {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+}
+
+.slider-box {
+  width: 3em;
+  height: 1em;
+}
+.slider-box * {
+  transition: 420ms;
+}
+
+.slider-box input[type="checkbox"] {
+  display: none;
+}
+
+.slider-box label {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #ff7a7a;
+  border: 1px solid #aaa;
+  border-radius: 0.5em;
+  padding-top: 0.1em;
+  padding-left: 0.2em;
+}
+
+.slider-box label div {
+  width: 0.6em;
+  height: 0.6em;
+  background: white;
+  border: none;
+  border-radius: 2em;
+}
+
+
+.slider-box input[type="checkbox"]:checked + label {
+  background: #7aff7a;
+  padding-left: 2em;
+}
